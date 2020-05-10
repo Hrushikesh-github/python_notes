@@ -1,0 +1,11 @@
+Any change you make inside the constructor that modifies the state of the self parameter will reflect the newly created object.
+When any class component has a name starting with two underscores (__), it becomes private - this means that it can be accessed only from within the class.
+class Stack:
+
+    def __init__(self):
+
+        self.__stackList = []
+print(object.__stacklist) -> gives error
+3.functions have a parameter named self at the first position of the parameters list.It allows the method to access entities (properties and activities/methods) carried out by the actual object. You cannot omit it.
+4.Every class is a subclass of itself
+5.Class variables don't come in object __dict__

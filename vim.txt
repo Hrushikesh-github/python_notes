@@ -1,0 +1,16 @@
+Replace All:
+  :%s/foo/bar/g
+Find each occurrence of 'foo' (in all lines), and replace it with 'bar'.
+For specific lines:
+:6,10s/foo/bar/g
+Change each 'foo' to 'bar' for all lines from line 6 to line 10 inclusive.
+
+
+When inside vim,
+:tabnew filename
+Or frin terminal vim -p file1 file2
+
+:Explore opens the file explorer window
+In normal mode, :e + Ctrl-Shift-D also works(press escape to leave)
+or :Explore but this actually replaces the current file in case u choose
+a new file

@@ -1,0 +1,38 @@
+#inserting animals dataset in colab
+
+#The steps from this website
+https://stackoverflow.com/questions/49310470/using-kaggle-datasets-in-google-colab/49311066#49311066
+
+Maybe this trick will work:
+
+1ST UPLOAD kaggle.json file from ur downloads section to colab
+ !pip install -q kaggle
+ !mkdir -p ~/.kaggle
+ !cp kaggle.json ~/.kaggle/
+ !chmod 600 ~/.kaggle/kaggle.json
+
+ search for available datasets using:
+     !kaggle datasets list
+
+but this only gives data of competitions
+
+use -s for searching for others: like 
+    !kaggle datasets list -s panda
+    !kaggle datasets download -d ashishsaxena2209/animal-image-datasetdog-cat-and-panda
+
+It will be downloaded in the same level as where drive is present
+U should unzip it using:
+
+unzip -q file_name.zip -d directory_name_to_save
+
+# -d to indicate directory and -q to supress commands
+
+!unzip -q "/content/animal-image-datasetdog-cat-and-panda.zip" -d "/content/Animals"
+
+########################
+
+Or use github 
+
+! git clone https://........git
+
+Your folder is ready
